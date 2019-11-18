@@ -1,0 +1,43 @@
+{
+  "name": "glutmedevac",
+  "version": "1.0.0",
+  "description": "To manage Glutt medical evacuation tourism",
+  "main": "index.js",
+  "jest": {
+    "setupTestFrameworkScriptFile": "./src/setupTests.js"
+  },
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html --out-dir build --no-source-maps",
+    "deploy": "npm run build && firebase deploy",
+    "test": "jest --config ./jest.config.json",
+    "test:watch": "npm run test -- --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Frediflexta/glutmedevac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Frediflexta/glutmedevac/issues"
+  },
+  "homepage": "https://github.com/Frediflexta/glutmedevac#readme",
+  "dependencies": {
+    "firebase": "^7.2.3",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.7.1",
+    "@babel/preset-react": "^7.7.0",
+    "babel-jest": "^24.9.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.15.1",
+    "jest": "^24.9.0",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.23.3"
+  }
+}

@@ -11,6 +11,6 @@ describe('App test', () => {
 
   it('should exist', () => {
 
-    expect(wrapper.text().includes('Glutmed-evac')).toBe(true);
+    expect(wrapper.text().includes('Glutmed-evac and github actions')).toBe(true);
   })
 })
